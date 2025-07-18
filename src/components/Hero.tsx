@@ -1,48 +1,43 @@
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-// import { LogoBanner } from '@/components/ImageBanner'
+import Link from 'next/link'
 
 export function Hero() {
   return (
-    <Container className="pt-20 pb-16 text-center lg:pt-32">
-      <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-        Template{' '}
-        <span className="relative whitespace-nowrap text-blue-800">
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 418 42"
-            className="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-800/70"
-            preserveAspectRatio="none"
-          >
-            <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z" />
-          </svg>
-          <span className="relative">template</span>
-        </span>{' '}
-        for templates.
-      </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Template text.Template text.Template text.Template text.Template
-        text.Template text.Template text.Template text.Template text.
-      </p>
-      <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Sign up today</Button>
-        <Button
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-          variant="outline"
-        >
-          <svg
-            aria-hidden="true"
-            className="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"
-          >
-            <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
-          </svg>
-          <span className="ml-3">Watch video</span>
-        </Button>
-      </div>
-      <div className="mt-26 lg:mt-44">
-        <p className="font-display text-base text-slate-900">5 star reviews </p>
-        {/* <LogoBanner /> */}
-      </div>
-    </Container>
+    <div className="relative h-80 w-full bg-slate-900 md:h-96">
+      <Container className="pt-20 pb-16 text-left lg:pt-32">
+        <h1 className="mx-auto max-w-4xl text-pretty font-display text-5xl font-medium tracking-tight text-gray-200 sm:text-7xl">
+          Bex Ford
+        </h1>
+        <h2 className="mx-auto mt-6 max-w-2xl text-left text-2xl font-medium text-pretty text-gray-400 sm:text-xl/8">
+          Software Engineer
+        </h2>
+        <p className="mx-auto mt-6 max-w-2xl text-left text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+          Bex the builder!
+        </p>
+
+        <div className="items-left flex flex-col py-10 sm:flex-row-reverse sm:justify-between">
+          <div className="flex gap-x-6">
+            <Link href="#" className="group" aria-label="Template on LinkedIn">
+              <svg
+                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3v-10h3v10zm-1.5-11.25c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.25 11.25h-3v-5.5c0-1.1-.9-2-2-2s-2 .9-2 2v5.5h-3v-10h3v1.25c.41-.77 1.36-1.25 2.25-1.25 1.93 0 3.5 1.57 3.5 3.5v6.5z" />
+              </svg>
+            </Link>
+            <Link href="#" className="group" aria-label="Template on GitHub">
+              <svg
+                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z" />
+              </svg>
+            </Link>
+          </div>{' '}
+        </div>
+      </Container>
+    </div>
   )
 }

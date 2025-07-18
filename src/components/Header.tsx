@@ -10,7 +10,6 @@ import {
 import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-// import { Logo } from '@/components/Logo'
 import { NavLink } from '@/components/NavLink'
 
 function MobileNavLink({
@@ -83,14 +82,10 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className="py-10">
+    <header className="bg-slate-900 py-6">
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="/" aria-label="Home">
-              {/* <Logo className="h-10 w-auto" /> */}
-              Logo Here
-            </Link>
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="/about">About</NavLink>
               <NavLink href="/gallery">Gallery</NavLink>
@@ -98,16 +93,9 @@ export function Header() {
               <NavLink href="/contact">Contact</NavLink>
             </div>
           </div>
-          <div className="flex items-center gap-x-5 md:gap-x-8">
-            <Button href="/register" color="blue">
-              <span>
-                Sign up today <span className="hidden lg:inline">today</span>
-              </span>
-            </Button>
-            <div className="-mr-1 md:hidden">
-              <MobileNavigation />
-            </div>
-          </div>
+          <Button href="/register" color="teal">
+            <span>CV</span>
+          </Button>
         </nav>
       </Container>
     </header>

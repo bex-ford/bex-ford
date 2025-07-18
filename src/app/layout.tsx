@@ -1,16 +1,18 @@
 import { type Metadata } from 'next'
 import { Inter, Lexend } from 'next/font/google'
 import clsx from 'clsx'
-import CookieBanner from '@/components/CookieBanner'
 
 import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
     template: '%s',
-    default: 'Template',
+    default: 'Bex Ford',
   },
-  description: 'Description template',
+  description: 'Bex Ford Portfolio',
+  icons: {
+    icon: '/favicon.png',
+  }
 }
 
 const inter = Inter({
@@ -34,13 +36,12 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
+        'h-full scroll-smooth bg-[#142534] antialiased',
         inter.variable,
         lexend.variable,
       )}
     >
       <body className="flex h-full flex-col">
-        <CookieBanner />
         {children}
       </body>
     </html>
