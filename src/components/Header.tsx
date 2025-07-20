@@ -1,21 +1,10 @@
 'use client'
-
-import Link from 'next/link'
-import {
-  Popover,
-  PopoverButton,
-  PopoverBackdrop,
-  PopoverPanel,
-} from '@headlessui/react'
-import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
-import { NavLink } from '@/components/NavLink'
-
 
 export function Header() {
   return (
-<header className="bg-slate-900 py-6 flex justify-self-end">
+<header className="bg-slate-900 py-6 flex justify-end">
       <Container>
           <Button
             href="/cv.pdf"
