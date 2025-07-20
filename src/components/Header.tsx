@@ -4,8 +4,8 @@ import { Container } from '@/components/Container'
 
 export function Header() {
   return (
-<header className="bg-slate-900 py-6 flex justify-end">
-      <Container>
+<header className="bg-slate-900 py-6">
+      <Container className="flex justify-end">
           <Button
             href="/cv.pdf"
             color="teal"
