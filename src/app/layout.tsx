@@ -36,7 +36,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-[#142534] antialiased',
+        'h-full scroll-smooth bg-slate-900 antialiased',
         inter.variable,
         lexend.variable,
       )}

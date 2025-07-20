@@ -9,18 +9,26 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <div className="bg-slate-900 sticky right-2 bottom-10 z-50 flex justify-end pr-10 md:hidden">
-          {' '}
+      <div className="md:sticky md:top-0 md:h-screen">
+        <Header />
+      </div>
+      <main className="flex flex-col md:flex-row">
+        {/* Hero on the left for desktop */}
+        <div className="md:sticky md:top-0 md:h-screen md:w-1/2">
+          <Hero />
+        </div>
+        {/* Other sections on the right for desktop */}
+        <div className="flex flex-col md:w-1/2 md:overflow-y-auto">
+          <About />
+          <Experience />
+          <Projects />
+        </div>
+        {/* WhatsApp button (mobile only) */}
+        <div className="sticky right-2 bottom-10 z-50 flex w-auto justify-end pr-10 md:hidden">
           <Link
             href="https://wa.me/447824631398"
             className="group rounded-full bg-gray-300 p-3 shadow-lg"
-            aria-label="Template on WhatsApp"
+            aria-label="WhatsApp"
           >
             <svg
               className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
