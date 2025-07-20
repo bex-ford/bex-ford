@@ -1,36 +1,24 @@
 import Link from 'next/link'
-
 import { Container } from '@/components/Container'
-import { NavLink } from '@/components/NavLink'
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900">
+    <footer className="bg-slate-900 md:hidden">
       <Container>
-        <div className="py-10">
-          <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="/about">About</NavLink>
-              <NavLink href="/gallery">Gallery</NavLink>
-              <NavLink href="/team">Meet the team</NavLink>
-              <NavLink href="/contact">Contact</NavLink>
-            </div>
-          </nav>
-        </div>
-        <div className="flex flex-col items-center border-t border-slate-600/10 py-10 sm:flex-row-reverse sm:justify-between">
+        <div className="flex flex-col items-left py-10 px-3 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
-            <Link href="#" className="group" aria-label="Template on LinkedIn">
+            <Link href="https://linkedin.com/in/bex-ford-40a9331b6" className="group" aria-label="Template on LinkedIn">
               <svg
-                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                className="h-6 w-6 fill-slate-500 group-hover:fill-[#148A88]"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
               >
                 <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3v-10h3v10zm-1.5-11.25c-.97 0-1.75-.78-1.75-1.75s.78-1.75 1.75-1.75 1.75.78 1.75 1.75-.78 1.75-1.75 1.75zm13.25 11.25h-3v-5.5c0-1.1-.9-2-2-2s-2 .9-2 2v5.5h-3v-10h3v1.25c.41-.77 1.36-1.25 2.25-1.25 1.93 0 3.5 1.57 3.5 3.5v6.5z" />
               </svg>
             </Link>
-            <Link href="#" className="group" aria-label="Template on GitHub">
+            <Link href="https://github.com/bex-ford" className="group" aria-label="Template on GitHub">
               <svg
-                className="h-6 w-6 fill-slate-500 group-hover:fill-slate-700"
+                className="h-6 w-6 fill-slate-500 group-hover:fill-[#148A88]"
                 aria-hidden="true"
                 viewBox="0 0 24 24"
               >
